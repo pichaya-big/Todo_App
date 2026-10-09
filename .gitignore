@@ -39,3 +39,20 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# source archives (already extracted into assets/ and design/)
+*.zip
+
+# logs
+*.log

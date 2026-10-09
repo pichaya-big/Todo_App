@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo/vector-icons": "^14.0.0",
+    "@react-native-async-storage/async-storage": "^1.23.1",
     "expo": "~57.0.27",
+    "expo-font": "~13.0.1",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
-    "react-native": "0.86.3"
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "^5.10.1"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",

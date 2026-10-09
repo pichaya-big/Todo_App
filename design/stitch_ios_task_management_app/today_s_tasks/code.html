@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "surface-tint": "#4d44e3", "on-secondary": "#ffffff", "surface": "#faf8ff", "primary-container": "#4f46e5", "tertiary-fixed": "#ffdada", "inverse-primary": "#c3c0ff", "error": "#ba1a1a", "on-primary-container": "#dad7ff", "outline-variant": "#c7c4d8", "on-tertiary-fixed": "#40000c", "secondary-container": "#2170e4", "secondary-fixed": "#d8e2ff", "secondary-fixed-dim": "#adc6ff", "on-error": "#ffffff", "primary-fixed-dim": "#c3c0ff", "tertiary": "#950029", "on-secondary-fixed-variant": "#004395", "on-primary": "#ffffff", "secondary": "#0058be", "on-secondary-container": "#fefcff", "primary-fixed": "#e2dfff", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "on-primary-fixed-variant": "#3323cc", "on-tertiary-container": "#ffd0d2", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "on-surface-variant": "#464555", "on-primary-fixed": "#0f0069", "tertiary-container": "#c20038", "primary": "#3525cd", "surface-container": "#eaedff", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7ff", "background": "#faf8ff", "outline": "#777587", "inverse-surface": "#283044", "inverse-on-surface": "#eef0ff", "on-secondary-fixed": "#001a42", "on-tertiary-fixed-variant": "#920028", "surface-variant": "#dae2fd", "tertiary-fixed-dim": "#ffb3b6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-xl": "1.5rem", "margin": "1rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-lg": "1rem", "gutter-tablet": "1rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["13px", { "lineHeight": "16px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-sm": ["17px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["34px", { "lineHeight": "41px", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }], "body-lg": ["17px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="min-h-full bg-surface text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WWZv38hqYXNidXA8jG8_1KG8feCqrZ6KEaJ5SKaHWg8DTwbRuWT474i31PVx2Hm8qEDvhOG2K60OXyR5G1rYtBFZi8RGksGLMCtA06iRuWMBeo4UN4CGFAVayQaALpdnx8kOvZP46sbPBIngK1E6ZLKCoDl8J8tF4l1eWp8lP44Gm1YXfqpxWjqfUWix1H4K7ISw5Nx8tdokySwEwLrlpkmpnhSII9UJ0rgbUJzJz5vnjhyKptUkkD4dE"/><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">TaskFlow</span><span class="text-outline-variant font-body-sm text-body-sm mx-space-xs">/</span><span class="font-headline-sm text-headline-sm text-on-surface font-normal">Today</span></div><button class="flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full focus:outline-none transition-transform active:scale-95"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcaNv1I3GjPxbbKNCgqAUknarZ83rKu5jDUsoju5DDcb2VTUXAACyXwKFWQrZpOpdQcl84ku4hBtjkI6Nwthk8cvX5iRxcIt5HbCTevMCJu1pM9yLUzg8CIMLkRuPH752oEnkhiCJfEPOndqV7jSFsd_ksMbtxwyqu5l0ySBgkB4zPeLK6ikZO1CwbgbHufiLT1zMsxyGakwVGjHTUR-1dcrcpG2s4mGHDmoF5aC8B-f20-pYWneKz"/></button></div></header><main class="w-full min-h-screen pt-14 pb-24 bg-surface flex flex-col"><div class="flex flex-col w-full px-margin pb-10">
+<!-- Top Greeting & Date Context -->
+<div class="flex items-end justify-between pt-space-md mb-space-lg">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Thursday, Oct 24</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight mt-0.5">Good morning, Alex 👋</h1>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="text-base select-none">🔥</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">5 days</span>
+</div>
+</div>
+<!-- Today's Progress Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-5 shadow-sm mb-space-lg">
+<div class="flex items-start justify-between mb-4">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Daily Focus</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">3 of 5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">tasks completed</span>
+</div>
+</div>
+<div class="flex items-center justify-center w-11 h-11 rounded-xl bg-primary-fixed text-primary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+</div>
+<!-- Animated Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2.5 overflow-hidden mb-3">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700 ease-out" id="progress-fill" style="width: 60%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Keep going, almost there!</span>
+<span class="text-primary font-semibold">60%</span>
+</div>
+</div>
+<!-- Filter / Category Horizontal Pills -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 mb-space-xl -mx-margin px-margin">
+<button class="filter-chip active flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95 whitespace-nowrap">
+<span>All</span>
+<span class="bg-on-primary/20 px-1.5 py-0.2 rounded-full text-[10px]">5</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all active:scale-95 whitespace-nowrap">
+<span>Work</span>
+<span class="bg-surface-container-high text-on-surface px-1.5 py-0.2 rounded-full text-[10px]">3</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all active:scale-95 whitespace-nowrap">
+<span>Personal</span>
+<span class="bg-surface-container-high text-on-surface px-1.5 py-0.2 rounded-full text-[10px]">2</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all active:scale-95 whitespace-nowrap">
+<span>Urgent</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.2 rounded-full text-[10px]">1</span>
+</button>
+</div>
+<!-- Task Groups Section -->
+<div class="flex flex-col gap-6">
+<!-- High Priority Group -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">High Priority</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 tasks</span>
+</div>
+<!-- Task Card 1 -->
+<div class="task-card group relative flex items-center gap-3.5 p-4 rounded-2xl bg-surface-container-lowest shadow-sm transition-all duration-200 hover:shadow-md" data-completed="false">
+<button aria-label="Toggle task status" class="task-toggle min-w-[24px] w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center transition-all active:scale-90">
+<span class="material-symbols-outlined text-[18px] text-transparent transition-colors">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<p class="task-title font-body-md text-body-md text-on-surface font-medium truncate">Finalize Q4 Product Roadmap</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              10:00 AM
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Work</span>
+<span class="flex items-center gap-0.5 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">checklist</span>
+              2/4
+            </span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm whitespace-nowrap self-start">High</span>
+</div>
+<!-- Task Card 2 -->
+<div class="task-card group relative flex items-center gap-3.5 p-4 rounded-2xl bg-surface-container-lowest shadow-sm transition-all duration-200 hover:shadow-md" data-completed="false">
+<button aria-label="Toggle task status" class="task-toggle min-w-[24px] w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center transition-all active:scale-90">
+<span class="material-symbols-outlined text-[18px] text-transparent transition-colors">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<p class="task-title font-body-md text-body-md text-on-surface font-medium truncate">Review client design proposal</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              1:30 PM
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Work</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm whitespace-nowrap self-start">High</span>
+</div>
+</div>
+<!-- Medium Priority Group -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Medium Priority</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 tasks</span>
+</div>
+<!-- Task Card 3 -->
+<div class="task-card group relative flex items-center gap-3.5 p-4 rounded-2xl bg-surface-container-lowest shadow-sm transition-all duration-200 hover:shadow-md" data-completed="false">
+<button aria-label="Toggle task status" class="task-toggle min-w-[24px] w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center transition-all active:scale-90">
+<span class="material-symbols-outlined text-[18px] text-transparent transition-colors">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<p class="task-title font-body-md text-body-md text-on-surface font-medium truncate">Weekly 1:1 sync with Engineering lead</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              3:00 PM
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Work</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm whitespace-nowrap self-start">Med</span>
+</div>
+<!-- Task Card 4 (Pre-completed) -->
+<div class="task-card group relative flex items-center gap-3.5 p-4 rounded-2xl bg-surface-container-low shadow-sm opacity-65 transition-all duration-200" data-completed="true">
+<button aria-label="Toggle task status" class="task-toggle min-w-[24px] w-6 h-6 rounded-lg bg-primary flex items-center justify-center transition-all active:scale-90">
+<span class="material-symbols-outlined text-[18px] text-on-primary transition-colors">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<p class="task-title font-body-md text-body-md text-outline font-medium line-through truncate">Pick up dry cleaning & groceries</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              5:30 PM
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Personal</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm whitespace-nowrap self-start">Med</span>
+</div>
+</div>
+<!-- Low Priority Group -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Low Priority</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 task</span>
+</div>
+<!-- Task Card 5 (Pre-completed) -->
+<div class="task-card group relative flex items-center gap-3.5 p-4 rounded-2xl bg-surface-container-low shadow-sm opacity-65 transition-all duration-200" data-completed="true">
+<button aria-label="Toggle task status" class="task-toggle min-w-[24px] w-6 h-6 rounded-lg bg-primary flex items-center justify-center transition-all active:scale-90">
+<span class="material-symbols-outlined text-[18px] text-on-primary transition-colors">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<p class="task-title font-body-md text-body-md text-outline font-medium line-through truncate">Read 2 chapters of Designing Data-Intensive Apps</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              Tonight
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Personal</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap self-start">Low</span>
+</div>
+</div>
+</div>
+<!-- Ambient Spacer to prevent bottom tab occlusion -->
+<div class="h-14"></div>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed bottom-20 right-margin z-40">
+<button aria-label="Add new task" class="flex items-center justify-center w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-xl hover:shadow-2xl transition-transform active:scale-90" id="add-task-fab">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+</div>
+</div>
+<script>
+  // Interactive Task Completion Toggle & Progress Meter Update
+  document.querySelectorAll('.task-toggle').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const card = button.closest('.task-card');
+      const title = card.querySelector('.task-title');
+      const checkIcon = button.querySelector('.material-symbols-outlined');
+      const isCompleted = card.getAttribute('data-completed') === 'true';
+
+      if (isCompleted) {
+        card.setAttribute('data-completed', 'false');
+        card.classList.remove('opacity-65', 'bg-surface-container-low');
+        card.classList.add('bg-surface-container-lowest');
+        button.classList.remove('bg-primary');
+        button.classList.add('bg-surface-container-high');
+        checkIcon.classList.remove('text-on-primary');
+        checkIcon.classList.add('text-transparent');
+        title.classList.remove('line-through', 'text-outline');
+        title.classList.add('text-on-surface');
+      } else {
+        card.setAttribute('data-completed', 'true');
+        card.classList.add('opacity-65', 'bg-surface-container-low');
+        card.classList.remove('bg-surface-container-lowest');
+        button.classList.add('bg-primary');
+        button.classList.remove('bg-surface-container-high');
+        checkIcon.classList.add('text-on-primary');
+        checkIcon.classList.remove('text-transparent');
+        title.classList.add('line-through', 'text-outline');
+        title.classList.remove('text-on-surface');
+      }
+
+      updateProgress();
+    });
+  });
+
+  function updateProgress() {
+    const total = document.querySelectorAll('.task-card').length;
+    const completed = document.querySelectorAll('.task-card[data-completed="true"]').length;
+    const percentage = Math.round((completed / total) * 100);
+
+    const progressFill = document.getElementById('progress-fill');
+    if (progressFill) {
+      progressFill.style.width = percentage + '%';
+    }
+  }
+
+  // Filter Pill active toggle
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary', 'active');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-primary', 'text-on-primary', 'active');
+      chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-margin flex items-center justify-around"><a aria-current="page" class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-space-xs transition-colors text-primary font-semibold" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">check_circle</span><span class="font-label-sm text-label-sm">Today</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="upcoming" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm">Upcoming</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">folder</span><span class="font-label-sm text-label-sm">Projects</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-sm text-label-sm">Settings</span></a></div></nav></body></html>
