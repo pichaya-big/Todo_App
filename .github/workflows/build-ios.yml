@@ -1,0 +1,55 @@
+name: Build Unsigned iOS (.ipa)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate native iOS project
+        run: npx expo prebuild --platform ios --no-install
+
+      - name: Install CocoaPods
+        run: |
+          cd ios
+          pod install
+
+      - name: Build archive (skip signing)
+        run: |
+          cd ios
+          xcodebuild -workspace TodoApp.xcworkspace \
+                     -scheme TodoApp \
+                     -sdk iphoneos \
+                     -configuration Release \
+                     -archivePath $RUNNER_TEMP/TodoApp.xcarchive \
+                     CODE_SIGNING_ALLOWED=NO \
+                     CODE_SIGN_IDENTITY="" \
+                     CODE_SIGNING_REQUIRED=NO \
+                     archive
+
+      - name: Package .ipa
+        run: |
+          cd $RUNNER_TEMP/TodoApp.xcarchive/Products/Applications
+          mkdir Payload
+          cp -r *.app Payload/
+          zip -r $RUNNER_TEMP/TodoApp.ipa Payload
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TodoApp-ipa
+          path: ${{ runner.temp }}/TodoApp.ipa
